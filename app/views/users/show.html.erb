@@ -9,16 +9,16 @@
 	<div class="center">
 		<%= will_paginate @user_articles %>
 	</div>
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-<div class="center">
+	<p>
+	  <strong>Email:</strong>
+	  <%= @user.email %>
+	</p>
+	<div class="center">
 
-<%= will_paginate @user_articles %>
+	<%= will_paginate @user_articles %>
 
-</div>
-<%= render 'articles/article', obj: @user.articles %>
+	</div>
+	<%= render 'articles/article', obj: @user.articles %>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+	<%= link_to 'Edit', edit_user_path(@user) %> |
+	<%= link_to 'Back', users_path %>
